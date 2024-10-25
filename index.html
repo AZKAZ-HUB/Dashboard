@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin Penjualan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Penjualan</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Laporan</a></li>
+                <li><a href="#">Pengaturan</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="logout">Logout</a>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Dashboard Penjualan</h1>
+            <div class="user-info">
+                <span>Welcome, Admin</span>
+                <img src="avatar.jpg" alt="User Avatar" class="avatar">
+            </div>
+        </header>
+        <div class="container">
+            <div class="card">
+                <h2>Penjualan Bulanan</h2>
+                <canvas id="salesChart"></canvas>
+            </div>
+            <div class="card">
+                <h2>Top Produk</h2>
+                <canvas id="topProductsChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
